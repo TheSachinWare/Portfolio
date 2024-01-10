@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Ware Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--Font awesome CDN link.-->
+
+    <link rel="icon" href="logo.png"><!--Logo.-->
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <div class="nav">
+                <nav>
+                    <img src="logo2.png" alt="logo" class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">My_Work</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">About_Us</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-ellipsis-vertical" onclick="openMenu()"></i><hr>
+                </nav>
+            </div>
+
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I am <span>Sachin Ware</span>.</h1>
+                <h2>Web Developer</h2>
+                <h2><span>.</span></h2>
+            </div>
+        </div>
+</div>
+
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="glow"></div>
+                   <img src="Me2.png"  alt="" class="desktop-only">
+                    <svg class="mobile-only" id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                             <defs>
+                                <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                                    <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+                                    <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <mask id="mask1" mask-type="alpha">
+                                <path fill="url(#sw-gradient)" d="M19.6,-28.2C24.9,-27.1,28.4,-20.8,31.5,-14.3C34.6,-7.8,37.3,-1,36.2,5.1C35.2,11.3,30.5,16.8,24.9,19.5C19.3,22.2,12.9,22.2,6.6,25.2C0.3,28.3,-5.8,34.6,-11.7,35C-17.5,35.5,-23,30.1,-27.1,24.1C-31.3,18.2,-34.2,11.8,-35.1,5.1C-35.9,-1.6,-34.8,-8.5,-33.1,-16.4C-31.5,-24.2,-29.2,-33.1,-23.6,-34.1C-18,-35.1,-9,-28.3,-0.9,-26.8C7.1,-25.4,14.3,-29.4,19.6,-28.2Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+                            </mask>
+                            <g mask="url(#mask1)">
+                            <path fill="url(#sw-gradient)" d="M19.6,-28.2C24.9,-27.1,28.4,-20.8,31.5,-14.3C34.6,-7.8,37.3,-1,36.2,5.1C35.2,11.3,30.5,16.8,24.9,19.5C19.3,22.2,12.9,22.2,6.6,25.2C0.3,28.3,-5.8,34.6,-11.7,35C-17.5,35.5,-23,30.1,-27.1,24.1C-31.3,18.2,-34.2,11.8,-35.1,5.1C-35.9,-1.6,-34.8,-8.5,-33.1,-16.4C-31.5,-24.2,-29.2,-33.1,-23.6,-34.1C-18,-35.1,-9,-28.3,-0.9,-26.8C7.1,-25.4,14.3,-29.4,19.6,-28.2Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path> <image href="Me2.png" alt="me" x="12" y="-14"> </g>            
+                        </svg>  
+                       
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Other than this...
+                        <ul>
+                            <li>I like to play Tabla.</li>
+                            <li>Read Hindu Scriptures.</li>
+                        </ul><br><hr><br>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links active-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> - </span> MongoDB.</li>
+                            <li><span> - </span> SQL.</li>
+                            <li><span> - </span> Node JS(Basic, Express, EJS, RESTful API's).</li>
+                            <li><span> - </span> JavaScript (Basic, OOP's, Advanced).</li>
+                            <li><span> - </span> Boot Strap | CSS | HTML |</li>
+                            <li><span> - </span> I can work with Git & Github.</li>
+                            <li><span> - </span> Able to work on Terminal.</li>
+                            <li><span> - </span> C/ C++ with normal DS.</li>
+                            <li><span> - </span> Basics of Python.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="projects">
+                        <ul>
+                            <li><span>- </span>Created website of Chats(using MongoDB & RESTful API's).</li>
+                            <li><span>- </span>Created website of Blogs(using RESTful API's & server based).</li>
+                            <li><span>- </span>Created Simon-Says game website.</li>
+                            <li><span>- </span>Created To-do website in two ways ( normal JS & DOM in JS).</li>
+                            <li><span>- </span>Created Mini-Project of Photography.</li>
+                            <li><span>- </span>Created a website of random Youtube channel.</li><br>
+                            <li><span>My Projects in College :-<br>
+                                </span>1. Note making website (using HTML, CSS, JS).<br>
+                                2. Brick Breaker Game (using Python).<br>
+                                3. Hospital management (using C).</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship :- </span> None</li>
+                            <li><span>Companies :- </span> None</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech - IT : </span>@VIIT, kondwa, pune.  -- 8.05</li>
+                            <li><span>MHT-CET : </span> 97.17</li>
+                            <li><span>JEE MAINS : </span> 87.17</li>
+                            <li><span>12th(HSC) : </span>@Residential College, ahmednagar  --86.17</li>
+                            <li><span>10th(SSC) : </span>@SPG Highschool, ahmednagar.  -- 94.16</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- Services -->
+<!-- <div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2></h2>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- My Work -->
+    <div class="portfolio" id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Blogs_Website.png" alt="">
+                <div class="layer">
+                    <h3>Blogs Website</h3>
+                    <p>...</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Simon_Says_Game.png" alt="">
+                <div class="layer">
+                    <h3>Simon Says Game</h3>
+                    <p>...</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Spotify_Clone.png" alt="">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>...</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+    </div>
+
+    
+
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <p><i class="fa-solid fa-envelope"></i> sachin.p.ware.2005@gmail.com </p>
+                    <p><i class="fa-solid fa-phone"></i> 7276005182 </p>
+
+                    <a href="https://www.linkedin.com/in/thesachinware/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/TheSachinWare"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.instagram.com/thesachinware?igsh=d2Fpc2dtZmdmYWtp"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="resume" id="resume">
+                    <a href="SachinWare Resume.pdf" download class="btn btn2 btn3">Download CV</a>
+                </div>
+            </div>
+
+
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" cols="60" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Message sent successfully.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="copyright" id="copyright">
+    <div class="copyright1">
+        <i>TheSachinWare.</i>
+    </div>
+
+    <div class="copyright2">© 2024 | Portfolio of Sachin Ware. </div>
+
+    <div class="copyright3">
+        <a href="https://www.linkedin.com/in/thesachinware/"><i class="fa-brands fa-linkedin end-logo"></i></a>&emsp;
+        <a href="https://github.com/TheSachinWare"><i class="fa-brands fa-github end-logo"></i></a>&emsp;
+        <a href="https://www.instagram.com/thesachinware?igsh=d2Fpc2dtZmdmYWtp"><i class="fa-brands fa-instagram end-logo"></i></a>
+    </div>
+</div>
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(t of tabLinks){
+                t.classList.remove("active-link");
+            }
+
+            for(t1 of tabContents){
+                t1.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxIZ7y3yJTS8T-TxHNRjxWE-SB0ZJbX0DberPYx5_RUnq48eMhIlo15JaSp0vSRo-879A/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully.";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbxIZ7y3yJTS8T-TxHNRjxWE-SB0ZJbX0DberPYx5_RUnq48eMhIlo15JaSp0vSRo-879A/exec -->
